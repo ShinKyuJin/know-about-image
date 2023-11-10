@@ -20,4 +20,6 @@ model user {
   cellphone         String    @db.VarChar(20)
   army_number       String    @db.VarChar(15)
   password          String    @db.VarChar(80)
+
+  @@unique([army_number(sort: Desc)])
 }
